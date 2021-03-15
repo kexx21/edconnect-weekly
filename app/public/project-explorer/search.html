@@ -35,20 +35,25 @@
         </header>
        <div style="margin:100px;">
         <div class="bg-light p3">
+            <h2>Project Gallery</h2>
             <form>
                 <div class="form-group row">
-                    <div class="col">
-                    <input type="text" name="searchTerm" class="form-control-lg" placeholder="Search project name, authors, abstract, tags">
+                    <div class="col-6">
+                    <input type="text" name="search term" class="form-control-lg" placeholder="Search project name, authors, abstract, tags">
                     </div>
-                    
-                    <label for="searchby">Search by</label>
-                    <select class="m-2 form-control-lg"> 
-                        <option name="searchby" value="name">Name</option>
-                        <option name="searchby" value="author">Author</option>
-                        <option name="searchby" value="abstract">Abstract</option>
-                        <option name="searchby" value="tags">Tags</option>                                                                                                
-                    </select>                  
-                    <button type="submit" class="btn btn-lg btn-primary">Submit</button>                
+                        <div class="col-3">
+                            <label for="searchby">Search by</label>
+                            <select class="m-2 form-control-lg"> 
+                                <option name="searchby" value="name">Name</option>
+                                <option name="searchby" value="author">Author</option>
+                                <option name="searchby" value="abstract">Abstract</option>
+                                <option name="searchby" value="tags">Tags</option>                                                                        
+                            </select>  
+                        </div>
+                        <div>
+                            <button type="submit" class="btn btn-lg btn-primary">Submit</button> 
+                        </div>                
+                                   
                 </div>
             </form>
             <b>All Projects</b> (0 results)

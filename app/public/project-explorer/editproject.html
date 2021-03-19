@@ -42,13 +42,11 @@
             </div>
         </nav>
     </header>
-    <main>
-
-
+    
         <div class="container">
             <h2 style="margin-bottom: 15px; margin-top:30px;">Project 1</h2>
-            <div class="row my-row card-header">
-                <div class="col-md-3 my-col">
+            <div class="row">
+                <div class="col-md-3">
                     <label for="Created By" class="form-label">Created By</label>
                     <div>Ade Chris</div>
                 </div>
@@ -62,59 +60,41 @@
                 </div>
 
                 <div class="col-md-3 my-col d-flex justify-content-end">
-                    <a href="viewproject.html" class="btn btn-primary" role="button">view
-                        project</a>
+                    <a href="viewproject.html" class="btn btn-primary" role="button">view project</a>
                 </div>
             </div>
-        </div>
-        <div class="container">
             <form>
-                <div class="row my-row">
+                <div class="row">
                     <div class="col-md-6 ">
                         <h5>Edit Projects</h5>
                         <div class="mb-3 card"></div>
-                    </div>
-                    <div class="col-md-6">
-                        <h5>Manage Project Files</h5>
-                        <div class="mb-3 card"></div>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-md-6">
                         <label for="projectname" class="form-label">Project Name</label>
                         <input type="text" name="name" class="form-control" placeholder="Project1">
-                    </div>
-                    <div class="col-md-6">
-                        <input type="file" class="form-control">
-                    </div>
-                    <div class="col-md-6">
                         <label for="abstract" class="form-label">Project abstract</label>
                         <textarea type="text" name="abstract" class="form-control"
                             placeholder="Project1 is a very interesting project"></textarea>
+                            <label for="Authors" class="form-label">Author(s)</label>
+                            <input type="text" name="authors" class="form-control" placeholder="Ade Chris">
+                            <label for="projecttag" class="form-label">Tag(s)</label>
+                            <input type="text" name="tags" class="form-control" placeholder="#web">
+                            <button type="submit" class="mt-2 btn btn-primary">Save</button>
                     </div>
+                    
                     <div class="col-md-6">
+                        <h5>Manage Project Files</h5>
+                        <div class="mb-3 card"></div>
+                        <input type="file" class="form-control mb-3">
+                        <div class="mb-3 card"></div>
                         <div class="card">
                             <div class="card-header">Project files</div>
                             <div class="card-text text-center">No file uploaded yet</div>
                         </div>
                     </div>
-                    <div class="col-md-6">
-                        <label for="Authors" class="form-label">Author(s)</label>
-                        <input type="text" name="authors" class="form-control" placeholder="Ade Chris">
-                    </div>
-                    <div class="col-md-6"></div>
-                    <div class="col-md-6">
-                        <label for="projecttag" class="form-label">Tag(s)</label>
-                        <input type="text" name="tags" class="form-control" placeholder="#web">
-                    </div>
-                    <div class="col-md-6"></div>
-                    <div class="col-md-6">
-                        <button type="submit" class="mt-2 btn btn-primary">Save</button>
-                    </div>
                 </div>
             </form>
         </div>
-    </main>
+
+    
     <footer style="float:right; margin-right: 50px;">
         Project Explorer &copy; 2020. <b>Edconnect</b>
     </footer>
